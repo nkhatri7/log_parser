@@ -47,15 +47,16 @@ def get_top_three(list):
     return top_three_items
 
 
+# Get log file
+filename = input('Enter the filename of the log file you want to report: ')
 # Read file
-filename = 'programming-task-example-data.log'
 log_file = open(filename, 'r')
 
 # Create lists to store IP addresses and URLs
 ip_addresses = []
 urls = []
 
-print(f"Reading {filename}...\n")
+print(f'Reading {filename}...\n')
 # Iterate through each line in log file
 for log in log_file:
     # Extract IP address and URL and add them to their respective lists
